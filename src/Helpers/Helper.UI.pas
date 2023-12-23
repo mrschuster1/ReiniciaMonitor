@@ -11,18 +11,16 @@ type
   TUIHelper = class
   private
     const
-    FONTS_LIST: array [0 .. 2] of string = ('SEGOE_MDL2', 'SEGOE_FLUENT',
-      'DASH_ICONS');
+    FONTS_LIST: array [0 .. 2] of string =
+      ('SEGOE_MDL2', 'SEGOE_FLUENT', 'DASH_ICONS');
+    class var FontCount: Cardinal;
   public
     class procedure LoadFontFromResource;
   end;
 
 implementation
 
-var
-  FontCount: Cardinal;
-
-  { TUIHelper }
+{ TUIHelper }
 
 class procedure TUIHelper.LoadFontFromResource;
 begin

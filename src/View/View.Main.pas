@@ -64,7 +64,6 @@ type
     procedure btnReiniciarClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
   private
-    { Private declarations }
     CaminhoMonitor: string;
     ExecutavelMonitor: string;
     procedure SetTheme;
@@ -72,7 +71,6 @@ type
     procedure FecharMonitor;
     procedure AbrirMonitor;
   public
-    { Public declarations }
   end;
 
 var

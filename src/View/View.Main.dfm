@@ -83,8 +83,8 @@ object formMain: TformMain
       Align = alRight
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -17
-      Font.Name = 'Segoe MDL2 Assets'
+      Font.Height = -13
+      Font.Name = 'Segoe Fluent Icons'
       Font.Style = []
       Font.Quality = fqClearTypeNatural
       ParentFont = False
@@ -95,7 +95,7 @@ object formMain: TformMain
       CustomBackColor.LightColor = 13619151
       CustomBackColor.DarkColor = 3947580
       ButtonStyle = qbsQuit
-      Caption = #57610
+      Caption = #59579
       ExplicitLeft = 232
     end
     object btnMinimizar: TUQuickButton
@@ -105,8 +105,8 @@ object formMain: TformMain
       Align = alRight
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -17
-      Font.Name = 'Segoe MDL2 Assets'
+      Font.Height = -13
+      Font.Name = 'Segoe Fluent Icons'
       Font.Style = []
       Font.Quality = fqClearTypeNatural
       ParentFont = False
@@ -117,27 +117,28 @@ object formMain: TformMain
       CustomBackColor.LightColor = 13619151
       CustomBackColor.DarkColor = 3947580
       ButtonStyle = qbsMin
-      Caption = #57608
+      Caption = #59681
       ExplicitLeft = 232
     end
     object lblCaption: TUText
-      Left = 38
+      Left = 42
       Top = 0
       Width = 91
       Height = 32
       Align = alLeft
       Caption = 'Reiniciar Monitor'
       Layout = tlCenter
+      ExplicitLeft = 38
       ExplicitHeight = 15
     end
     object imgIcon: TcxImage
       AlignWithMargins = True
-      Left = 1
-      Top = 1
-      Margins.Left = 1
-      Margins.Top = 1
+      Left = 5
+      Top = 2
+      Margins.Left = 5
+      Margins.Top = 2
       Margins.Right = 5
-      Margins.Bottom = 1
+      Margins.Bottom = 2
       Align = alLeft
       Picture.Data = {
         0D546478536D617274496D61676589504E470D0A1A0A0000000D494844520000
@@ -319,7 +320,10 @@ object formMain: TformMain
       Style.BorderStyle = ebsNone
       TabOrder = 0
       Transparent = True
-      Height = 30
+      ExplicitLeft = 1
+      ExplicitTop = 1
+      ExplicitHeight = 30
+      Height = 28
       Width = 32
     end
   end
