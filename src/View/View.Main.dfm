@@ -4,7 +4,7 @@ object formMain: TformMain
   BorderIcons = [biSystemMenu, biMinimize]
   BorderStyle = bsNone
   Caption = 'Reiniciar Monitor'
-  ClientHeight = 267
+  ClientHeight = 221
   ClientWidth = 481
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -20,31 +20,31 @@ object formMain: TformMain
     Left = 0
     Top = 32
     Width = 481
-    Height = 235
+    Height = 189
     Align = alClient
     Color = 15132390
-    Padding.Left = 50
-    Padding.Top = 50
-    Padding.Right = 50
-    Padding.Bottom = 50
+    Padding.Left = 10
+    Padding.Top = 10
+    Padding.Right = 10
+    Padding.Bottom = 10
     TabOrder = 0
     CustomBackColor.Enabled = False
     CustomBackColor.Color = 15132390
     CustomBackColor.LightColor = 15132390
     CustomBackColor.DarkColor = 2039583
     object btnReiniciar: TUListButton
-      Left = 50
-      Top = 50
-      Width = 381
-      Height = 135
+      Left = 10
+      Top = 10
+      Width = 461
+      Height = 169
       Align = alClient
       Caption = 'Reiniciar'
       TabOrder = 0
       OnClick = btnReiniciarClick
       IconFont.Charset = DEFAULT_CHARSET
       IconFont.Color = clWindowText
-      IconFont.Height = -20
-      IconFont.Name = 'Segoe MDL2 Assets'
+      IconFont.Height = -23
+      IconFont.Name = 'dashicons'
       IconFont.Style = []
       IconFont.Quality = fqClearTypeNatural
       CustomBackColor.Enabled = False
@@ -60,7 +60,8 @@ object formMain: TformMain
       CustomBackColor.DarkSelectedNone = 89
       CustomBackColor.DarkSelectedHover = 103
       CustomBackColor.DarkSelectedPress = 127
-      FontIcon = #59541
+      ImageIndex = 0
+      FontIcon = #62563
       Detail = 'F5'
     end
   end
@@ -122,7 +123,7 @@ object formMain: TformMain
     object lblCaption: TUText
       Left = 38
       Top = 0
-      Width = 92
+      Width = 91
       Height = 32
       Align = alLeft
       Caption = 'Reiniciar Monitor'
@@ -330,12 +331,5 @@ object formMain: TformMain
       ShortCut = 116
       OnExecute = actReiniciarExecute
     end
-  end
-  object queryReiniciar: TFDQuery
-    Connection = ProviderConnection.Conn
-    SQL.Strings = (
-      'delete from MON$ATTACHMENTS')
-    Left = 112
-    Top = 40
   end
 end
