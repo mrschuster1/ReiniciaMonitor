@@ -60,7 +60,6 @@ type
     lblCaption: TUText;
     ActionList: TActionList;
     actReiniciar: TAction;
-    queryReiniciar: TFDQuery;
     procedure actReiniciarExecute(Sender: TObject);
     procedure btnReiniciarClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
