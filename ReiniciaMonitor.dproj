@@ -106,8 +106,8 @@
         <VerInfo_Locale>1033</VerInfo_Locale>
         <Icon_MainIcon>ReiniciaMonitor_Icon.ico</Icon_MainIcon>
         <AppExecutionLevel>requireAdministrator</AppExecutionLevel>
-        <VerInfo_Build>1</VerInfo_Build>
-        <VerInfo_Keys>CompanyName=Thiago Schuster;FileDescription=$(MSBuildProjectName);FileVersion=1.0.0.1;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProgramID=com.embarcadero.$(MSBuildProjectName);ProductName=$(MSBuildProjectName);ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
+        <VerInfo_Build>2</VerInfo_Build>
+        <VerInfo_Keys>CompanyName=Thiago Schuster;FileDescription=$(MSBuildProjectName);FileVersion=1.0.0.2;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProgramID=com.embarcadero.$(MSBuildProjectName);ProductName=$(MSBuildProjectName);ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
     </PropertyGroup>
     <ItemGroup>
         <DelphiCompile Include="$(MainSource)">
@@ -123,7 +123,19 @@
             <FormType>dfm</FormType>
             <DesignClass>TDataModule</DesignClass>
         </DCCReference>
-        <DCCReference Include="src\Utils\Util.HTTP.pas"/>
+        <DCCReference Include="src\Helpers\Helper.UI.pas"/>
+        <RcItem Include="resource\fonts\SegMDL2.ttf">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>SEGOE_MDL2</ResourceId>
+        </RcItem>
+        <RcItem Include="resource\fonts\SegoeIcons.ttf">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>SEGOE_FLUENT</ResourceId>
+        </RcItem>
+        <RcItem Include="resource\fonts\dashicons.ttf">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>DASH_ICONS</ResourceId>
+        </RcItem>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>
@@ -159,6 +171,24 @@
                 <DeployFile LocalName="bin\ReiniciaMonitor.exe" Configuration="Release" Class="ProjectOutput">
                     <Platform Name="Win32">
                         <RemoteName>ReiniciaMonitor.exe</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="resource\fonts\SegMDL2.ttf" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="resource\fonts\SegoeIcons.ttf" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="resource\fonts\dashicons.ttf" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>

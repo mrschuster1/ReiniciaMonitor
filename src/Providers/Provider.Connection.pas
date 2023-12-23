@@ -62,8 +62,7 @@ implementation
 
 
 uses
-  Helpers.Ini,
-  Util.HTTP;
+  Helpers.Ini;
 
 {$R *.dfm}
 
